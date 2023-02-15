@@ -34,6 +34,8 @@ Cypress.Commands.add('login', () => {
     cy.get("[type='email']").type('daiana@toteat.com')
     cy.get("[type='password']").type('12341234')
     cy.get("button[type='submit']").click()
+    cy.wait(5000)
+    cy.get("[id='intercom_chat_activator']").should('be.visible')
 })
 
 

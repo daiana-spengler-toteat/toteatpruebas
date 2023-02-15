@@ -10,7 +10,6 @@
   "author": "spengler dai",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^12.5.1",
-    "cypress-social-logins": "^1.14.0"
+    "cypress": "^12.5.1"
   }
 }
