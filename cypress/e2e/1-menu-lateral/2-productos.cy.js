@@ -1,6 +1,6 @@
 //const { beforeEach } = require("mocha")
 
-describe("Crear producto y jerarquía", () => {
+describe("Crear, buscar y eliminar producto", () => {
 
     beforeEach(() => {
         cy.login()
@@ -18,7 +18,7 @@ describe("Crear producto y jerarquía", () => {
         cy.get(".areaInput > .lineaShow > .lineaContent > :nth-child(3) > .ng-pristine").type('Descripción producto test')
         cy.get(".areaInput > .lineaShow > .lineaContent > :nth-child(4) > .ng-pristine").type('3')
         cy.get(".areaInput > .lineaShow > .lineaContent > :nth-child(5) > .ng-pristine").type('1.8')
-        cy.get(".areaInput > .lineaShow > .lineaContent > .size5 > .ng-pristine").click()
+        cy.get(".areaInput > .lineaShow > .lineaContent > .size5 > .ng-pristine").check()
         cy.get("#selectorBulk").select([2])
         cy.get(".areaInput > .lineaShow > .editLinea > .toticon").click()
         cy.get("[ng-click='grabarProductos()']").click()

@@ -1,4 +1,4 @@
-describe("Login", () => {
+describe("Login válido e inválidos", () => {
   
    beforeEach(() => {
            cy.visit("https://resdev.toteat.com/")
